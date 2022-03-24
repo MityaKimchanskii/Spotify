@@ -15,12 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .spotifyBlack
         window?.makeKeyAndVisible()
-        window?.backgroundColor = .systemBackground
+       
+//        let navigationController = UINavigationController(rootViewController: TitleBarController())
+//        window?.rootViewController = navigationController
         
-        let navigationController = UINavigationController(rootViewController: TitleBarController())
-        window?.rootViewController = navigationController
-        
+        window?.rootViewController = HomeController()
         return true
     }
 

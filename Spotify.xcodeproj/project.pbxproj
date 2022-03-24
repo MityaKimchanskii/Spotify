@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BC5141928B88ABC004C35C7 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5141828B88ABC004C35C7 /* HomeController.swift */; };
+		3BC5141B28B88B56004C35C7 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5141A28B88B56004C35C7 /* MenuBar.swift */; };
+		3BC5141D28B892D9004C35C7 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5141C28B892D9004C35C7 /* PlaylistCell.swift */; };
 		3BC851DB28B73FEF00A251E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC851DA28B73FEF00A251E4 /* AppDelegate.swift */; };
 		3BC851DF28B73FEF00A251E4 /* TitleBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC851DE28B73FEF00A251E4 /* TitleBarController.swift */; };
 		3BC851E428B73FF200A251E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC851E328B73FF200A251E4 /* Assets.xcassets */; };
 		3BC851E728B73FF200A251E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC851E528B73FF200A251E4 /* LaunchScreen.storyboard */; };
 		3BC851F028B7480600A251E4 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC851EF28B7480600A251E4 /* Container.swift */; };
+		3BC851F228B7536300A251E4 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC851F128B7536300A251E4 /* Factories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BC5141828B88ABC004C35C7 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		3BC5141A28B88B56004C35C7 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		3BC5141C28B892D9004C35C7 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 		3BC851D728B73FEF00A251E4 /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC851DA28B73FEF00A251E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BC851DE28B73FEF00A251E4 /* TitleBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBarController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		3BC851E628B73FF200A251E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BC851E828B73FF200A251E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BC851EF28B7480600A251E4 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		3BC851F128B7536300A251E4 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 				3BC851DA28B73FEF00A251E4 /* AppDelegate.swift */,
 				3BC851DE28B73FEF00A251E4 /* TitleBarController.swift */,
 				3BC851EF28B7480600A251E4 /* Container.swift */,
+				3BC851F128B7536300A251E4 /* Factories.swift */,
+				3BC5141828B88ABC004C35C7 /* HomeController.swift */,
+				3BC5141A28B88B56004C35C7 /* MenuBar.swift */,
+				3BC5141C28B892D9004C35C7 /* PlaylistCell.swift */,
 			);
 			path = Spotify;
 			sourceTree = "<group>";
@@ -143,8 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC851DF28B73FEF00A251E4 /* TitleBarController.swift in Sources */,
+				3BC5141D28B892D9004C35C7 /* PlaylistCell.swift in Sources */,
 				3BC851F028B7480600A251E4 /* Container.swift in Sources */,
+				3BC5141B28B88B56004C35C7 /* MenuBar.swift in Sources */,
+				3BC851F228B7536300A251E4 /* Factories.swift in Sources */,
 				3BC851DB28B73FEF00A251E4 /* AppDelegate.swift in Sources */,
+				3BC5141928B88ABC004C35C7 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
