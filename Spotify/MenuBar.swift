@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+protocol MenuBarDelegate: AnyObject {
+    func didSelectItemAt(index: Int)
+}
 
 class MenuBar: UIView {
     
@@ -15,6 +18,8 @@ class MenuBar: UIView {
     let artistsButton: UIButton!
     let albumsButton: UIButton!
     let buttons: [UIButton]!
+    
+    weak var delegate: MenuBarDelegate?
     
     override init(frame: CGRect) {
         playlistsButton = makeButton(withText: "Playlist")
@@ -29,6 +34,7 @@ class MenuBar: UIView {
         artistsButton.addTarget(self, action: #selector(artistsButtonTapped), for: .primaryActionTriggered)
         albumsButton.addTarget(self, action: #selector(albumsButtonTapped), for: .primaryActionTriggered)
         
+        setAlpha(for: playlistsButton)
         layout()
     }
     
@@ -58,15 +64,54 @@ class MenuBar: UIView {
 // MARK: - Actions
 extension MenuBar {
     @objc func playlistsButtonTapped() {
-        
+        delegate?.didSelectItemAt(index: 0)
+        setAlpha(for: playlistsButton)
     }
     
     @objc func artistsButtonTapped() {
-        
+        delegate?.didSelectItemAt(index: 1)
+        setAlpha(for: artistsButton)
     }
     
     @objc func albumsButtonTapped() {
+        delegate?.didSelectItemAt(index: 2)
+        setAlpha(for: albumsButton)
+    }
+}
+ 
+extension MenuBar {
+    
+    func selectItem(at index: Int) {
+        animateIndecator(to: index)
+    }
+    
+    private func animateIndecator(to index: Int) {
         
+        var button: UIButton
+        switch index {
+        case 0:
+            button = playlistsButton
+        case 1:
+            button = artistsButton
+        case 2:
+            button = albumsButton
+        default:
+            button = playlistsButton
+        }
+        
+        setAlpha(for: button)
+        
+        UIView.animate(withDuration: 0.3) {
+            self.layoutIfNeeded()
+        }
+    }
+    
+    private func setAlpha(for button: UIButton) {
+        playlistsButton.alpha = 0.5
+        artistsButton.alpha = 0.5
+        albumsButton.alpha = 0.5
+        
+        button.alpha = 1.0
     }
 }
 
