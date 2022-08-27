@@ -18,10 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .spotifyBlack
         window?.makeKeyAndVisible()
        
-//        let navigationController = UINavigationController(rootViewController: TitleBarController())
-//        window?.rootViewController = navigationController
+        let navigationController = UINavigationController(rootViewController: TitleBarController())
+        window?.rootViewController = navigationController
         
-        window?.rootViewController = HomeController()
+//        window?.rootViewController = HomeController()
         return true
     }
 

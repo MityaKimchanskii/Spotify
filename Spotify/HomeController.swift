@@ -12,6 +12,7 @@ class HomeController: UIViewController {
     
     let menuBar = MenuBar()
     let playlistCellId = "playlistCellId"
+    let music: [[Track]] = [playlists, artists, albums]
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -63,13 +64,14 @@ class HomeController: UIViewController {
 
 extension HomeController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return colors.count
+        return music.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: playlistCellId, for: indexPath) as! PlaylistCell
         
-        cell.backgroundColor = colors[indexPath.item]
+//        cell.backgroundColor = colors[indexPath.item]
+        cell.tracks = music[indexPath.item]
         return cell
     }
 }

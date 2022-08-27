@@ -10,6 +10,7 @@
 		3BC5141928B88ABC004C35C7 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5141828B88ABC004C35C7 /* HomeController.swift */; };
 		3BC5141B28B88B56004C35C7 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5141A28B88B56004C35C7 /* MenuBar.swift */; };
 		3BC5141D28B892D9004C35C7 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5141C28B892D9004C35C7 /* PlaylistCell.swift */; };
+		3BC7AE2D28BA9DF000BFBFD1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC7AE2C28BA9DF000BFBFD1 /* Data.swift */; };
 		3BC851DB28B73FEF00A251E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC851DA28B73FEF00A251E4 /* AppDelegate.swift */; };
 		3BC851DF28B73FEF00A251E4 /* TitleBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC851DE28B73FEF00A251E4 /* TitleBarController.swift */; };
 		3BC851E428B73FF200A251E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC851E328B73FF200A251E4 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		3BC5141828B88ABC004C35C7 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		3BC5141A28B88B56004C35C7 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		3BC5141C28B892D9004C35C7 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
+		3BC7AE2C28BA9DF000BFBFD1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		3BC851D728B73FEF00A251E4 /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC851DA28B73FEF00A251E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BC851DE28B73FEF00A251E4 /* TitleBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBarController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				3BC5141828B88ABC004C35C7 /* HomeController.swift */,
 				3BC5141A28B88B56004C35C7 /* MenuBar.swift */,
 				3BC5141C28B892D9004C35C7 /* PlaylistCell.swift */,
+				3BC7AE2C28BA9DF000BFBFD1 /* Data.swift */,
 			);
 			path = Spotify;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				3BC851F228B7536300A251E4 /* Factories.swift in Sources */,
 				3BC851DB28B73FEF00A251E4 /* AppDelegate.swift in Sources */,
 				3BC5141928B88ABC004C35C7 /* HomeController.swift in Sources */,
+				3BC7AE2D28BA9DF000BFBFD1 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
