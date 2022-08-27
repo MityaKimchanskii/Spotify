@@ -44,7 +44,7 @@ class TitleBarController: UIViewController {
     func setupViews() {
         guard let containerView = container.view else { return }
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.backgroundColor = .systemRed
+//        containerView.backgroundColor = .systemRed
         
         view.addSubview(containerView)
         
